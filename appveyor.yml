@@ -1,0 +1,56 @@
+# Commented sections below can be used to run tests on the CI server
+# https://simulatedgreg.gitbooks.io/electron-vue/content/en/testing.html#on-the-subject-of-ci-testing
+version: 0.1.{build}
+
+skip_non_tags: true
+
+skip_branch_with_pr: true
+
+image: Visual Studio 2017
+
+platform:
+  - x64
+
+configuration: Release
+
+init:
+  - git config --global core.autocrlf input
+
+install:
+  - ps: Install-Product node 12 x64
+  - git reset --hard HEAD
+  - node --version
+  - npm i -g node-gyp@6.0.1
+  - ps: npm prefix -g | % {npm config set node_gyp "$_\node_modules\node-gyp\bin\node-gyp.js"}
+  - yarn
+  - node scripts/check-electron-version.js
+
+build_script:
+  - yarn build
+
+test: off
+
+after_build:
+  # need appveyor will replace space in filename by ., but electron updater need '-', before deploy need to replace \s by -
+  - cmd: 'forfiles  /P build /m *.blockmap /C "cmd /e:on /v:on /c set \"Phile=@file\" & if @ISDIR==FALSE ren @file !Phile: =-!"'
+  - cmd: 'forfiles  /P build /m *.exe  /C "cmd /e:on /v:on /c set \"Phile=@file\" & if @ISDIR==FALSE ren @file !Phile: =-!"'
+
+artifacts:
+  - path: 'build\*.exe'
+  - path: 'build\*exe.blockmap'
+  - path: 'build\latest.yml'
+
+environment:
+  GH_TOKEN:
+    secure:  # todo your encrypted token from GitHub
+deploy:
+  release: $(appveyor_repo_tag_name)
+  description: 'Release description'
+  provider: GitHub
+  auth_token:
+    secure: 4GOzxEBqjC32EfBBG5qfC1YdSNRaY2g/2zcwmSUHjWTo2Cqji47P8CRfYw5vMnSt # your encrypted token from GitHub
+  artifact:
+  draft: false
+  prerelease: false
+  on:
+    appveyor_repo_tag: true # deploy on tag push only

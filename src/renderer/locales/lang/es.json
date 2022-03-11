@@ -1,0 +1,928 @@
+{
+  "advance": {
+    "audioDelay": "Retraso auditivo",
+    "audioMenu": "Configuraciones de audio",
+    "changeTrack": "Pista de audio",
+    "chosenTrack": "Defecto",
+    "fontItems": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "fontSize": "Tamaño de fuente",
+    "fontStyle": "Estilo de fuente",
+    "rateTitle": "Velocidad de reproducción",
+    "subDelay": "Retraso de subtítulos",
+    "subMenu": "Ajustes de subtítulos",
+    "track": "Pista"
+  },
+  "css": {
+    "titleFontSize": {
+      "fontSize": "21px"
+    },
+    "versionFontSize": {
+      "fontSize": "14px"
+    }
+  },
+  "tips": {
+    "openSidebar": "Mostrar barra lateral (C)",
+    "closeSidebar": "Ocultar barra lateral (C)",
+    "exit": "Volver a la página de inicio",
+    "delete": "Back to Launching Page"
+  },
+  "errorFile": {
+    "ENOSPC": {
+      "content": "No hay suficiente espacio en disco disponible.",
+      "title": "Error al abrir"
+    },
+    "EACCES": {
+      "content": "No tienes suficiente permiso.",
+      "title": "Error al abrir"
+    },
+    "ENOENT": {
+      "content": "Archivo no encontrado.",
+      "title": "Error al abrir"
+    },
+    "addNoVideo": {
+      "content": "No se puede encontrar el archivo reproducible.",
+      "title": "Agregar archivo fallido"
+    },
+    "default": {
+      "content": "Este tipo video no es compatible en este momento.",
+      "title": "Error de apertura"
+    },
+    "emptyFolder": {
+      "content": "No se puede encontrar el archivo reproducible.",
+      "title": "Error de apertura"
+    },
+    "fileNonExist": {
+      "content": "Será eliminado de la lista.",
+      "title": "Archivo no encontrado"
+    },
+    "playlistNonExist": {
+      "content": "Este elemento se ha eliminado.",
+      "title": "Archivo no encontrado"
+    },
+    "fileNonExistInPlaylist": {
+      "content": "El archivo ha sido eliminado o renombrado.",
+      "title": "Algunos archivos no fueron encontrados"
+    },
+    "loadFailed": {
+      "content": "Este tipo de subtítulo no es compatible en este momento.",
+      "title": "Subtitulo de carga fallado"
+    },
+    "offLine": {
+      "content": "Por favor, compruebe la red y vuelva a intentarlo.",
+      "title": "Error al conectarse a la red"
+    },
+    "timeout": {
+      "content": "Retraso en la red o error del servidor.",
+      "title": "Pide tiempo fuera"
+    },
+    "localSubtitleRemoved": {
+      "title": "Subtítulo no se pudo cargar",
+      "content": "El subtítulo local se ha eliminado o se ha cambiado de nombre."
+    }
+  },
+  "loading": {
+    "content": "Cargando Traducciones ...",
+    "title": ""
+  },
+  "msg": {
+    "audio": {
+      "decreaseAudioDelay": "Retraso auditivo",
+      "decreaseVolume": "Disminuir volumen",
+      "defaultAudioTrack": "Defecto",
+      "increaseAudioDelay": "Retraso auditivo",
+      "increaseVolume": "Aumenta el volumen",
+      "mute": "Mudo",
+      "name": "Audio",
+      "switchAudioTrack": "Cambiar la pista de audio"
+    },
+    "file": {
+      "clearHistory": "Borrar historial de reproducción",
+      "closeWindow": "Cerrar ventana",
+      "name": "Expediente",
+      "open": "Abrir…",
+      "openUrl": "Abrir URL...",
+      "openRecent": "Recientemente abierto",
+      "copy": "Copiar",
+      "paste": "Pegar",
+      "losslessStreaming": {
+        "losslessStreaming": "",
+        "select": "",
+        "selectCurrent": "",
+        "getInfo": "",
+        "stop": "",
+        "sharing": "",
+        "stopped": "",
+        "title": "",
+        "status": "",
+        "on": "",
+        "off": "",
+        "host": "",
+        "token": "",
+        "tip": "",
+        "tipWnB": ""
+      }
+    },
+    "account": {
+      "name": "Cuenta",
+      "login": "Iniciar sesión",
+      "logout": "Cerrar Sesión"
+    },
+    "advanced": {
+      "name": "Herramientas de subtítulos",
+      "save": "Guardar",
+      "undo": "Deshacer",
+      "redo": "Rehacer",
+      "export": "Exportar",
+      "reference": "Referencia",
+      "loadLocalSubtitleFile": "Añadir local ...",
+      "back": "Salir del editor",
+      "enter": "Editar",
+      "prev": "Clip anterior",
+      "next": "Siguiente clip"
+    },
+    "help": {
+      "name": "Ayuda",
+      "feedback": "Comentarios",
+      "homepage": "Sitio web",
+      "splayerxHelp": "Ayuda",
+      "shortCuts": "Lista de accesos directos",
+      "uploadInfo": "Enviar informe de errores"
+    },
+    "playback": {
+      "backwardL": "Paso atrás -60s",
+      "backwardS": "Paso hacia atrás -5s",
+      "backwardPS": "Paso atrás -1s",
+      "captureScreen": "Captura de pantalla",
+      "captureVideoClip": "Captura de video clip",
+      "decreasePlaybackSpeed": "Disminuir la velocidad de reproducción",
+      "forwardL": "Paso adelante 60s",
+      "forwardS": "Paso adelante 5s",
+      "forwardPS": "Paso adelante +1s",
+      "fullScreen": "Pantalla completa",
+      "increasePlaybackSpeed": "Aumentar la velocidad de reproducción",
+      "name": "Reproducción",
+      "pause": "Pausa",
+      "play": "Jugar",
+      "resetSpeed": "Restablecer velocidad de reproducción",
+      "nextVideo": "Siguiente Video",
+      "showPlaylist": "Mostrar lista de reproducción",
+      "hidePlaylist": "Ocultar lista de reproducción",
+      "previousVideo": "Video Anterior",
+      "singleCycle": "Repetir una",
+      "playlistLoop": "Lista de bucles",
+      "snapShot": "Instantánea",
+      "generateThumbnails": "Miniaturas",
+      "generate3*3": "Generar 3 x 3",
+      "generate4*4": "Generar 4 x 4"
+    },
+    "splayerx": {
+      "about": "Acerca de SPlayer",
+      "checkForUpdates": "Buscar actualizaciones",
+      "hide": "Esconder",
+      "hideOthers": "Esconder otros",
+      "preferences": "Preferencias",
+      "quit": "Salir de SPlayer",
+      "showAll": "Mostrar todo"
+    },
+    "subtitle": {
+      "AITranslation": "Recargar la traducción Smart",
+      "decreasePrimarySubtitleDelay": "Retraso de subtítulos -0.1s",
+      "increasePrimarySubtitleDelay": "Retraso de subtítulos +0.1s",
+      "decreaseSecondarySubtitleDelay": "Retraso de subtítulos secundarios -0.1s",
+      "increaseSecondarySubtitleDelay": "Retraso de subtítulos secundarios +0.1s",
+      "disabledSecondarySub": "Desactivar Subtitulo Secundario",
+      "enabledSecondarySub": "Habilitar subtítulos secundarios",
+      "langEn": "Inglés",
+      "langZhCN": "Chino",
+      "loadSubtitleFile": "Cargar archivo de subtítulos ...",
+      "mainSubtitle": "Subtitulo primario",
+      "menuLoading": "Cargando ...",
+      "name": "Subtítulos",
+      "noSubtitle": "Extraviado",
+      "notToShowSubtitle": "Cerrar",
+      "secondarySubtitle": "Subtitulo secundario",
+      "subtitleSetting": "Ajustes de subtítulos",
+      "subtitleDelay": "Retraso de subtítulos",
+      "size1": "Pequeño",
+      "size2": "Estándar",
+      "size3": "Grande",
+      "size4": "Extra grande",
+      "style1": "Estilo de película",
+      "style2": "Estilo anime",
+      "style3": "Estilo retro",
+      "style4": "Estilo japones",
+      "style5": "Clásico moderno",
+      "subtitleSelect": "Traducción",
+      "subtitleSize": "Tamaño de fuente",
+      "subtitleStyle": "Estilo de fuente",
+      "uploadSelectedSubtitle": "Subir subtítulo seleccionado",
+      "referenceSubtitleSelect": "Referencia",
+      "noReferenceSubtitle": "Afuera "
+    },
+    "titleName": "SPlayer",
+    "update": {
+      "message": "¿Reiniciar la aplicación ahora para instalar la actualización?",
+      "no": "No",
+      "title": "Actualización lista",
+      "updateInstalled": "Ha sido actualización a la última versión!",
+      "yes": "Sí"
+    },
+    "window": {
+      "windowRotate": "Girar 90 en sentido horario",
+      "keepPlayingWindowFront": "Flotar al reproducir",
+      "backToLandingView": "Volver a la página de inicio",
+      "bossKey": "Clave de jefe",
+      "doubleSize": "200%",
+      "enterFullScreen": "Pantalla completa",
+      "exitFullScreen": "Salir de pantalla completa",
+      "halfSize": "50%",
+      "maxmize": "Enfocar",
+      "minimize": "Minimizar",
+      "name": "Ventana",
+      "originSize": "100%",
+      "enterPip": "Habilitar Picture in Picture",
+      "exitPip": "Salir de Picture in Picture",
+      "playInNewWindow": "Reproducir en ventana nueva",
+      "backToBrowser": "Volver al navegador",
+      "openSidebar": "Mostrar barra lateral",
+      "closeSidebar": "Ocultar barra lateral"
+    },
+    "edit": {
+      "name": "Editar",
+      "cut": "Cortar",
+      "copy": "Copiar",
+      "paste": "Pegar",
+      "selectAll": "Seleccionar todo"
+    },
+    "history": {
+      "name": "Historial",
+      "reload": "Recargar página",
+      "back": "Espalda",
+      "forward": "Avance",
+      "clearHistory": "Borrar historial"
+    }
+  },
+  "nextVideo": {
+    "nextInFolder": "Siguiente en la carpeta",
+    "nextInPlaylist": "Siguiente en Playlist"
+  },
+  "welcome": {
+    "welcomeTitle": "Welcome to SPlayer",
+    "welcomeDescription": "All-new lightweight design, incredible performance with smart translation to let you enjoy your videos like never before.",
+    "agreement": "By using SPlayer, you agree to our ",
+    "policy": "Privacy Policy",
+    "languageTitle1": "Set your preferred subtitle",
+    "languageTitle2": "languages to fetch translations",
+    "primary": "Primary",
+    "secondary": "Secondary",
+    "chooseSecondary": "Select Secondary Language",
+    "languageDescription": "* You can change your settings in preferences later",
+    "none": "None"
+  },
+  "browsing": {
+    "customized": "Sitios personalizados",
+    "addSite": "Añadir sitio",
+    "siteName": "Nombre del sitio",
+    "siteAddress": "Dirección del sitio",
+    "namePlaceholder": "Introduce el nombre del sitio",
+    "addressPlaceholder": "Introduzca la URL",
+    "enterValidUrl": "Por favor, introduzca una URL válida",
+    "cancel": "Cancelar",
+    "submit": "OK",
+    "loading": "Cargando...",
+    "bilibili": "Bilibili",
+    "iqiyi": "iQIYI",
+    "youtube": "YouTube",
+    "huya": "Huya",
+    "qq": "Tencent Video",
+    "douyu": "Douyu",
+    "twitch": "Twitch",
+    "youku": "Youku",
+    "coursera": "Coursera",
+    "ted": "TED",
+    "lynda": "Lynda",
+    "masterclass": "MasterClass",
+    "sportsqq": "Tencent Sports",
+    "developerapple": "WWDC",
+    "vipopen163": "网易公开课",
+    "study163": "网易云课堂",
+    "imooc": "慕课网",
+    "icourse163": "中国大学MOOC",
+    "openLocalFile": "Abrir archivo local...",
+    "enterPip": "Habilitar Picture in Picture",
+    "exitPip": "Volver al navegador",
+    "enterPop": "Reproducir en ventana nueva",
+    "exitPop": "Volver al navegador",
+    "danmu": "Alternar Danmaku",
+    "pin": "Pin / Unpin (T)",
+    "error": {
+      "offline": "Sin Internet",
+      "try": "Prueba:",
+      "firstLine": "Comprobando los cables de red, módem y router",
+      "secondLine": "Reconectando a Wi-Fi"
+    },
+    "remove": "Eliminar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "siteManager": "Gestor de sitios",
+    "general": "General",
+    "education": "Educación",
+    "siteTip": "Añadir / Editar",
+    "today": "Hoy",
+    "yesterday": "Ayer",
+    "nameInvalid": "The site name contains invalid characters. ",
+    "saveTemporary": "Guardar",
+    "homepage": {
+      "tips": "Inicio",
+      "unSigned": "No iniciado sesión",
+      "signInfo": "Inicia sesión para usar la traducción de IA y tener acceso a más funciones.",
+      "signBtn": "Iniciar sesión",
+      "account": "Account: ",
+      "signOut": "Cerrar sesión",
+      "accountInfo": "Actualiza tu cuenta ahora y empieza con características exclusivas y más.",
+      "premiumBtn": "Upgrade",
+      "premiumInfo": "Fecha de registro: ",
+      "renewBtn": "Renovar",
+      "history": "Historial en línea",
+      "clear": "Clear",
+      "historyInfo": "Keep track of your playback history, including the page title, the site address and the date you watched.",
+      "playlist": "Lista local",
+      "playlistInfoPre": "Click the ",
+      "playlistInfoNext": " button on the left sidebar, choose and open more than one file to generate a playlist.",
+      "banner1": "Envíe sus<br>comentarios",
+      "banner2": "Contribute to our<br>Localization Project",
+      "banner3": "Release Notes"
+    },
+    "download": {
+      "fileName": "Nombre del archivo",
+      "resolution": "Resolución",
+      "saveTo": "Guardar en",
+      "cancel": "Cancelar",
+      "submit": "Descargar",
+      "downloadManager": "Gestor de descargas",
+      "resumeAll": "Resume All",
+      "pauseAll": "Pause All",
+      "clearAll": "Remove Completed",
+      "remove": "Eliminar",
+      "premium": "Puede descargar 1 video por día. ",
+      "selectUnavailable": "High-definition videos for premium users only. ",
+      "premiumBtn": "Go Premium",
+      "paused": "Pausado",
+      "failed": "Fallo",
+      "completed": "Completado",
+      "limited": "Uses Remaining: 0",
+      "loading": "Loading...",
+      "noHistory": "Sin historial",
+      "downloadCompleted": "Descarga completada",
+      "sitesLimited": "According to local laws and regulations, videos from this site could not be downloaded.",
+      "noResources": "Unable to find any videos that can be downloaded from this page.",
+      "unknownError": "Failed to fetch the video metadata, please try again later.",
+      "startDownloadError": "Network error, please try again later.",
+      "downloadingError": "Network error",
+      "downloadMenu": "Descargas",
+      "fileRemoved": "File Not Found",
+      "unknownResolution": "Resolución desconocida",
+      "fileNameInvalid": "The file name contains invalid characters.",
+      "vcRuntime": "Para utilizar la herramienta de descarga es necesario instalar Microsoft Visual C++ 2010 Runtime.",
+      "clickToSelect": "Click to select"
+    },
+    "copied": "URL copiada",
+    "copyUrlTitle": "Copiar URL"
+  },
+  "preferences": {
+    "general": {
+      "hideHistory": "Ocultar historial de reproducción",
+      "reverseScrolling": "Desplazamiento inverso del ratón",
+      "setDefault": "Establecer como el reproductor predeterminado",
+      "setDefaultDescription": "Todos los formatos de video se abren automáticamente usando SPlayer.",
+      "restoreSettings": "Borrar contenidos y ajustes",
+      "restoreSettingsDescription": "Reinicie con todos los datos y cachés borrados.",
+      "restoreSettingsAfterRelaunch": "Reiniciar para aplicar.",
+      "setButton": "Aplicar",
+      "relaunch": "Reiniciar",
+      "displayLanguage": "Idioma de la pantalla",
+      "generalSetting": "General",
+      "others": "Otros",
+      "HD": "Hardware Decoding",
+      "HDDescription": "Activar la decodificación de hardware reducirá significativamente la utilización de la CPU. Sin embargo, deseleccione la opción y envíenos sus {link} comentarios si tiene problemas para reproducir vídeos.",
+      "HDLink": "enviar",
+      "switchDisplayLanguages": "El idioma de visualización controla el idioma que ve en SPlayer.",
+      "isDarkMode": "Tema oscuro del navegador",
+      "snapshotPath": "Capturas de pantalla",
+      "select": "Elegir"
+    },
+    "translate": {
+      "languageDescription": "Subir datos anónimos para obtener resultados de subtítulos en el siguiente idioma, no se incluirá información de privacidad.",
+      "languagePriority": "Preferencia de idioma",
+      "none": "Ninguna",
+      "primary": "Primario",
+      "translateConfirm": "Habilitar subtítulo inteligente",
+      "translateSetting": "Subtítulos",
+      "secondary": "Secundario",
+      "setAsDefault": "Establecer SPlayer como la aplicación predeterminada",
+      "settings": "Ajustes"
+    },
+    "video": {
+      "videoSetting": "Vídeo"
+    },
+    "privacy": {
+      "privacySetting": "Privacidad",
+      "incognitoMode": "Modo incógnito",
+      "incognitoDescription": "No se guardará el historial de reproducción.",
+      "clearHistory": "Borrar historial de reproducción",
+      "clearHistoryDescription": "Eliminar listas de reproducción existentes y historial de reproducción"
+    },
+    "account": {
+      "accountSetting": "Cuenta",
+      "title": "Mi Perfil",
+      "noToken": {
+        "title": "No iniciado sesión",
+        "description": "Inicia sesión con tu número de teléfono para usar Traducción AI y funciones más avanzadas.",
+        "button": "Iniciar sesión"
+      },
+      "normalUser": {
+        "title": "Account: ",
+        "registration": "Registration Date: {date}",
+        "description": "Actualiza tu cuenta ahora y empieza con características exclusivas y más.",
+        "descriptionAPPX": "Advanced features are not available in the Microsoft Store version.",
+        "button": "Upgrade"
+      },
+      "vipUser": {
+        "title": "Premium Account: ",
+        "description": "Fecha de caducidad: ",
+        "button": "Renovar"
+      },
+      "month": " Month",
+      "year": " Year",
+      "months": " Months",
+      "years": " Years",
+      "signOut": "Cerrar sesión",
+      "createdAt": "Fecha de registro",
+      "payAt": "Compras Recientes",
+      "payContent": "{date}{product}",
+      "payProduct": ": {product} Premium",
+      "pointsTitle": "AI Translation Points: {points}",
+      "pointsDescription": "AI Translation Points will be consumed based on the amount of audio successfully processed by the service of translation and speech recognition. (1 Point / Min)",
+      "buyPoints": "Get More Points",
+      "viewHistory": ""
+    },
+    "premium": {
+      "premiumSetting": "Premium",
+      "title": "SPlayer Premium",
+      "title1": "Premium Service Updated",
+      "description": "Acceda ahora a Premium para ayudar a SPlayer a cambiar la forma en que la gente ve los vídeos y obtener acceso a funciones más avanzadas.",
+      "description1": "We’ve made some updates to the Premium services, please download the latest version of SPlayer. <br/><br/>The AI Translation Points Pack will be available in the new release. The Points is consumed based on the amount of audio successfully processed by the service of translation and speech recognition. Current Premium members will get extra ( Remaining Days of Premium Service * 60 ) AI Translation Points.",
+      "explanation": {
+        "title": "About the Pricing",
+        "description1": "Applying a complex Translation System, which supports the translation of multiple languages and the speech recognition of long duration videos, has been incurring massive ongoing maintenance costs so far.",
+        "description2": "We are thrilled to your strong support, of which the impact and power will help us make the SPlayer better, and your adoption of the new technology will finally contribute to briding the language gaps and connecting the world.",
+        "description3": "Best Regards,",
+        "description4": "SPlayer Team",
+        "description5": "2019",
+        "description6": "Only the monthly payment plan is available during the open beta test."
+      },
+      "content": {
+        "description1": "Smart Translation and Speech Recognition with 180 mins free trial per month (Orig. $6.8)",
+        "description2": "Smart Translation and Speech Recognition expansion pack at a discount (Start with $0.025 / min)",
+        "description3": "Smart Translation and Speech Recognition supports more languages",
+        "description4": "Edit and export subtitles and translation results",
+        "description5": "Download online videos with no usage limits",
+        "description6": "Fetch online subtitles on the mobile version (In development)",
+        "description7": "More advanced features are coming soon ..."
+      },
+      "origin": "ORIG. ",
+      "off": "% Off",
+      "month": " Month",
+      "year": " Year",
+      "months": " Mo.",
+      "years": " Yr.",
+      "normal": "Standard",
+      "giftmonth": "{num} Bonus Month",
+      "giftyear": "{num} Bonus Year",
+      "giftmonths": "{num} Bonus Months",
+      "giftyears": "{num} Bonus Years",
+      "payType": {
+        "alipay": "Alipay",
+        "wxpay": "WeChat",
+        "paypal": "PayPal"
+      }
+    },
+    "translationEdit": {
+      "translationEditSetting": "Editor",
+      "quickEdit": "Edición rápida",
+      "quickEditDescription": "Permite editar rápidamente la traducción seleccionada cuando el vídeo está en pausa."
+    },
+    "points": {
+      "pointsSetting": "Traducción",
+      "title": "AI Translation Points",
+      "titleLave": "Balance: {points}",
+      "description": "AI Translation Points will be consumed based on the amount of audio successfully processed by the service of translation and speech recognition. (1 Point / Min) Your Points will no longer expire.",
+      "guestWarning": "",
+      "beVip": "upgrade",
+      "minute": "{number} Points",
+      "origin": "{price}",
+      "premium": "Premium {price}",
+      "minutePer": "{price} / Min",
+      "service": ""
+    }
+  },
+  "payment": {
+    "wxpay": {
+      "title": "SCAN & PAY",
+      "description": "WeChat Pay"
+    },
+    "fail": "Error"
+  },
+  "privacyBubble": {
+    "confirmDisable": {
+      "button": "Cancelar",
+      "partOne": "Confirmar a",
+      "partTwo": "Datos anónimos y traducción inteligente.",
+      "underlinedContent": "Prohibir"
+    },
+    "masVersion": {
+      "agree": "Habilitar",
+      "content": "La función de traducción inteligente necesita su consentimiento para cargar información multimedia anónima en el lado del servidor, y no recibirá los resultados de la traducción si no está de acuerdo. No hay información de privacidad será recopilada.",
+      "disagree": "Prohibir"
+    },
+    "tryToDisable": {
+      "button": "De acuerdo",
+      "partOne": "SPlayer utiliza datos anónimos para mejorar la experiencia del usuario. La traducción inteligente se desactivará si",
+      "partTwo": ".",
+      "underlinedContent": "Prohibir"
+    }
+  },
+  "alertBubble": {
+    "button": "OK"
+  },
+  "notExportEmbeddedSubtitle": {
+    "title": "",
+    "content": "The selected subtitle is loading, please try to export it later"
+  },
+  "forbiddenExportEmbeddedSubtitle": {
+    "title": "",
+    "content": "No se pueden exportar subtítulos basados en imágenes"
+  },
+  "appxNotExport": {
+    "title": "Not Available",
+    "content": "Advanced features are not available in the Microsoft Store version."
+  },
+  "protectBubble": {
+    "agree": "OK",
+    "setting": "Configurando",
+    "content": "La protección de privacidad inteligente está habilitada. Se eliminará el historial de reproducción sensible o no apto para el trabajo."
+  },
+  "checkForUpdatesBubble": {
+    "needUpdate": {
+      "confirm": "Descargar",
+      "cancel": "Saltar",
+      "content": "SPlayer {version} está disponible, ¿quieres descargarlo ahora?"
+    },
+    "noNeed": {
+      "content": "SPlayer está actualizado. Versión {version}"
+    }
+  },
+  "editorBubble": {
+    "saved": {
+      "content": "Subtítulo guardado",
+      "title": ""
+    },
+    "referenceIdNotExist": {
+      "content": "La referencia ha sido actualizada o eliminada",
+      "title": "Error al cargar referencia"
+    },
+    "referenceLoading": {
+      "content": "Cargando Referencia...",
+      "title": ""
+    },
+    "deleteSubtitleBubble": {
+      "confirm": "Eliminar",
+      "cancel": "Cancelar",
+      "content": "¿Está seguro que desea eliminar el subtítulo?"
+    },
+    "notWork": {
+      "title": "",
+      "content": "The selected subtitle is loading, please try to edit it later"
+    },
+    "forbidden": {
+      "title": "",
+      "content": "No se pueden editar los subtítulos basados en imágenes"
+    }
+  },
+  "recentPlaylist": {
+    "folderSource": "Carpeta",
+    "playing": "Jugando",
+    "paused": "En pausa",
+    "playlistSource": "Lista",
+    "add": "Agregar a la lista de reproducción",
+    "pin": "Pin la lista de reproducción para iniciar la página",
+    "pinned": "Lista de reproducción fijada para iniciar página"
+  },
+  "subtitle": {
+    "embedded": "Empotrar",
+    "modified": "Mi subtítulo",
+    "generate": "Generar",
+    "language": {
+      "ar": "Árabe",
+      "de": "Alemán",
+      "en": "Inglés",
+      "es": "Español",
+      "fr": "Francés",
+      "hi": "Hindi",
+      "it": "Italiano",
+      "ja": "Japonés",
+      "ko": "Coreano",
+      "pt": "Portugués (Portugal, Brasil)",
+      "ru": "Ruso",
+      "zh": "Chino (Simplificado)",
+      "zh-CN": "Chino (Simplificado)",
+      "zh-TW": "Chino (Tradicional)"
+    },
+    "tips": {
+      "editor": "Edit is coming soon ...",
+      "export": "Exportar",
+      "reload": "Regenerar",
+      "delete": "Eliminar"
+    },
+    "createSubtitle": {
+      "placeholder": "Haga clic para añadir subtítulo"
+    }
+  },
+  "uploading": {
+    "content": "Subtitulo subiendo ...",
+    "title": ""
+  },
+  "uploadingFailed": {
+    "content": "Por favor intente mas tarde.",
+    "title": "Subida fallida"
+  },
+  "uploadingSuccess": {
+    "content": "Subtítulo ha sido subido.",
+    "title": "Subir con éxito"
+  },
+  "cannotUpload": {
+    "title": "",
+    "content": "No se pueden subir subtítulos basados en imágenes"
+  },
+  "cannotExport": {
+    "title": "",
+    "content": "No se pueden exportar subtítulos basados en imágenes"
+  },
+  "bugUploading": {
+    "content": "Enviando informe...",
+    "title": ""
+  },
+  "bugUploadFailed": {
+    "content": "Por favor, inténtalo de nuevo más tarde.",
+    "title": "Envío fallido "
+  },
+  "bugUploadSuccess": {
+    "content": "Gracias por su apoyo.",
+    "title": "Envío exitoso"
+  },
+  "thumbnailGenerating": {
+    "content": "Generando miniatura ...",
+    "title": ""
+  },
+  "thumbnailSuccess": {
+    "content": "Guardado en la carpeta seleccionada. ",
+    "title": "Generate Successfully"
+  },
+  "thumbnailFailed": {
+    "content": "No se puede guardar en la carpeta de capturas de pantalla. Por favor, compruebe la ruta en la preferencia.",
+    "title": "Generate Failed"
+  },
+  "snapshotSuccess": {
+    "content": "Guardado en la carpeta seleccionada. ",
+    "title": "Snapshot Successfully"
+  },
+  "snapshotFailed": {
+    "content": "No se puede guardar en la carpeta de capturas de pantalla. Por favor, compruebe la ruta en la preferencia.",
+    "title": "Instantánea fallada"
+  },
+  "loadVideoBySubtitleFailed": {
+    "content": "No hay videos relacionados en la carpeta",
+    "title": ""
+  },
+  "translateModal": {
+    "videoLanguageLabel": "Idioma de audio",
+    "subtitleLanguageLabel": "Traducir a",
+    "selectLanguageLabel": "Idioma de audio",
+    "selectLanguageMoreLabel": "Más ...",
+    "audioLanguageLoading": "Obteniendo la lista de idiomas ...",
+    "audioLanguageLoadFail": "Conexión fallida, intente más tarde",
+    "select": {
+      "title": "Seleccionar idioma de audio",
+      "content": "Para generar un resultado de tranlación, por favor seleccione el idioma que escuche en el vídeo y haga clic en el botón generar. El proceso puede tardar algún tiempo.",
+      "contentLimit": "Seleccione el idioma que escuche en el vídeo y haga clic en el botón generar. Puede generar una traducción de AI gratis por día."
+    },
+    "translate": {
+      "title": "Acerca de {time} izquierda",
+      "minute": "{number} min",
+      "second": "{number} seg",
+      "hour": "{number} hr",
+      "content": "Por favor, no omita el vídeo o cierra la aplicación. Puedes comprobar el progreso en el panel de traducción.",
+      "contentSearch": "Buscando ...",
+      "contentTranslate": "Se han encontrado subtítulos en el idioma de origen, se están traduciendo de forma inteligente ...",
+      "contentGrabbing": "Subtítulo en el idioma de origen no encontrado, extracción de audio ...",
+      "contentGrabComplated": "Audio extraído, subiendo ahora ...",
+      "contentSpeech": "Audio subido, recolocación de voz y traducción en proceso ..."
+    },
+    "success": {
+      "title": "Traducción realizada",
+      "content": "AI Translation está lista, por favor, revisa el panel de traducción."
+    },
+    "discard": {
+      "title": "La traducción de AI está en curso",
+      "content": "¿Estás seguro de que quieres salir? Si te sales, el progreso de la traducción no se restaurará."
+    },
+    "noLineFail": {
+      "title": "Algo ha ido mal",
+      "content": "Comprueba tu conexión de red y vuelve a intentarlo."
+    },
+    "timeOutFail": {
+      "title": "El tiempo para la conexión ha acabado",
+      "content": "서버에 대한 연결이 실패했습니다. 나중에 다시 시도 해주세요."
+    },
+    "serverErrorFail": {
+      "title": "Error al traducir",
+      "content": "La traducción ha fallado debido a un error del servidor. Por favor, inténtalo más tarde."
+    },
+    "ForbiddenFail": {
+      "title": "Sesión caducada",
+      "content": "Inicie una sesión de nuevo."
+    },
+    "ExistsFail": {
+      "title": "Traducción fallida",
+      "content": "Tu tarea de traducción anterior está siendo procesada en el servidor. Inténtalo de nuevo más tarde."
+    },
+    "ExhaustedFail": {
+      "title": "Maximum Limit Reached",
+      "content": "It seems like you have translated a lot of videos today! Need extra time? Contact us via support@splayer.org."
+    },
+    "PermissionFail": {
+      "title": "Not Enough Points",
+      "content": "Required Points for This Video: {duration}<br/>Current Points Balance: {points}"
+    },
+    "PermissionFailAPPX": {
+      "title": "Not Available",
+      "content": "Advanced features are not available in the Microsoft Store version."
+    },
+    "buyPoints": {
+      "title": "Purchasing ...",
+      "content": "Please make the payment in the new window. Do not close this window until you complete the purchase.",
+      "button": {
+        "left": "Payment Successful",
+        "right": "Abort"
+      }
+    },
+    "loading": "Procesando ...",
+    "cancel": "Cancelar",
+    "quit": "Salir",
+    "generate": "Generar",
+    "ok": "OK",
+    "continue": "Cancelar",
+    "upgrade": "Get More Points",
+    "okAPPX": "OK",
+    "pointsContent": "Cost: {duration} Points, Balance: {points} Points",
+    "pointsButton": "Get Points"
+  },
+  "translateBubble": {
+    "bubbleWhenGrab": "La traducción de AI se abortará si continúa, ¿quieres continuar de todos modos?",
+    "bubbleWhenTranslate": "La traducción de AI está siendo procesada en el servidor. Puedes comprobar el progreso cuando veas el vídeo la próxima vez.",
+    "bubbleFunctionForbidden": "La traducción de AI se abortará si continúa, ¿quieres continuar de todos modos?",
+    "bubbleWhenSuccess": {
+      "title": "",
+      "content": "AI Translation está lista ahora, por favor, revisa el panel de traducción."
+    },
+    "bubbleWhenSuccessOnOtherVideo": {
+      "title": "",
+      "content": "La traducción de AI está lista ahora. Será cargada automáticamente la próxima vez que veas el vídeo."
+    },
+    "bubbleTranslateNoLineFail": {
+      "title": "네트워크 오류",
+      "content": "Comprueba tu conexión de red y vuelve a intentarlo."
+    },
+    "bubbleTranslateTimeOutFail": {
+      "title": "El tiempo para la conexión ha acabado",
+      "content": "서버에 대한 연결이 실패했습니다. 나중에 다시 시도 해주세요."
+    },
+    "bubbleTranslateServerErrorFail": {
+      "title": "Error al traducir",
+      "content": "La traducción ha fallado debido a un error del servidor. Por favor, inténtalo más tarde."
+    },
+    "bubbleTranslateForbiddenFail": {
+      "title": "Sesión caducada",
+      "content": "Inicie una sesión de nuevo."
+    },
+    "bubbleTranslateExistsFail": {
+      "title": "Traducción fallida",
+      "content": "Tu tarea de traducción anterior está siendo procesada en el servidor. Inténtalo de nuevo más tarde."
+    },
+    "bubbleTranslateExhaustedFail": {
+      "title": "Maximum Limit Reached",
+      "content": "It seems like you have translated a lot of videos today! Need extra time? Contact us via support@splayer.org."
+    },
+    "bubbleTranslatePermissionFail": {
+      "title": "Usos restantes hoy: 0",
+      "titleAPPX": "Not Available",
+      "content": "Lo sentimos, sólo puedes generar un resultado de traducción de AI por día.",
+      "contentAPPX": "Advanced features are not available in the Microsoft Store version."
+    },
+    "ok": "OK",
+    "cancel": "Cancelar",
+    "continue": "Continuar"
+  },
+  "openUrl": {
+    "httpAuthentication": "Autenticación HTTP",
+    "open": "Abrir",
+    "url": {
+      "placeholder": "Por favor, introduzca la URL aquí..."
+    },
+    "username": {
+      "placeholder": "Usuario"
+    },
+    "password": {
+      "placeholder": "Contraseña"
+    }
+  },
+  "loginModal": {
+    "title": "Iniciar sesión con número de teléfono",
+    "sendCode": "Enviar",
+    "sendingCode": "Enviando ...",
+    "countDown": "{count} s",
+    "placeholder": {
+      "mobile": "Tu número de teléfono",
+      "code": "Introduzca el código de verificación"
+    },
+    "submit": "Iniciar sesión",
+    "submitting": "Procesando ...",
+    "codeError": "Código de vértificación incorrecto",
+    "netWorkError": "El tiempo para la conexión ha acabado",
+    "noLineError": "No hay conexión de red",
+    "afsError": "Captcha Validation Failed",
+    "afs": {
+      "start": "Please slide to verify",
+      "yes": "Success",
+      "retry": "retry",
+      "error300": "Verification failed, please",
+      "errorNetwork": "Network Error. Please"
+    }
+  },
+  "forbiddenModal": {
+    "title": "Upgrade to SPlayer Premium",
+    "content": "Actualice para exportar los resultados de la traducción de forma ilimitada y obtenga acceso a características más exclusivas.",
+    "span": "Already Premium? Sign In",
+    "button": "Go Premium Now",
+    "audioLanguage": "日本語, 한국어, Español, Français, Deutsch, Italiano, Português, čeština, Русский, Indonesian, العربية, Türkçe, română",
+    "translate": {
+      "title": "Upgrade to SPlayer Premium",
+      "titleAPPX": "Not Available",
+      "content": "Acceda a Premium para tener acceso a más idiomas y otras características exclusivas.",
+      "contentAPPX": "Advanced features are not available in the Microsoft Store version.",
+      "span": "Already Premium? Sign In",
+      "button": "Go Premium Now"
+    },
+    "export": {
+      "title": "Upgrade to SPlayer Premium",
+      "content": "Actualice para exportar los resultados de la traducción de forma ilimitada y obtenga acceso a características más exclusivas.",
+      "span": "Already Premium? Sign In",
+      "button": "Go Premium Now"
+    }
+  },
+  "premiumModal": {
+    "loading": {
+      "content": "Processing，please wait a second …",
+      "button": "Cerrar"
+    },
+    "success": {
+      "h2": "Thanks for your support",
+      "h1": "Payment Successful !",
+      "h4": "NOW",
+      "pointsContent": "Your Point Balance: {points}",
+      "content1": "Smart Translation and Speech Recognition with 180 mins free trial per month",
+      "content2": "Smart Translation and Speech Recognition expansion pack at a discount (Start with $0.025 / min)",
+      "content3": "Smart Translation and Speech Recognition supports more languages",
+      "content4": "Edit and export subtitles and translation results",
+      "content5": "Download online videos with no usage limits",
+      "content6": "Fetch online subtitles on the mobile version (In development)",
+      "content7": "More advanced features are coming soon ...",
+      "button": "Hecho"
+    },
+    "fail": {
+      "h1": "Sorry",
+      "content": "Your transaction could not be processed，please contact us",
+      "copy": "Copiar",
+      "copied": "Copiado",
+      "button": "Atrás"
+    }
+  },
+  "about": {
+    "credits": "Credits"
+  }
+}

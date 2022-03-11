@@ -1,0 +1,16 @@
+<svg width="22" height="22" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient cx="60.436%" cy="38.56%" fx="60.436%" fy="38.56%" r="100%" id="a">
+            <stop stop-color="#FFF" stop-opacity=".165" offset="1.951%"/>
+            <stop stop-color="#FFF" stop-opacity=".424" offset="97.103%"/>
+        </radialGradient>
+        <radialGradient cx="81.846%" cy="79.235%" fx="81.846%" fy="79.235%" r="116.966%" gradientTransform="matrix(-.69975 -.6424 .7144 -.62923 .825 1.817)" id="b">
+            <stop stop-color="#FFF" stop-opacity=".776" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity=".508" offset="100%"/>
+        </radialGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <circle fill-opacity=".8" fill="url(#a)" cx="11" cy="11" r="11"/>
+        <path d="M6.16 11.325a4.84 4.84 0 014.832-4.84.008.008 0 00.008-.008V5.7c0-.246.28-.386.478-.239l1.97 1.478a.298.298 0 010 .477l-1.97 1.477A.299.299 0 0111 8.654v-.778a.008.008 0 00-.008-.008 3.457 3.457 0 00-3.449 3.393 3.467 3.467 0 003.521 3.52 3.457 3.457 0 003.374-3.095s0 0 0 0h0a.403.403 0 01.402-.361h.57a.411.411 0 01.41.449s0 0 0 0a4.84 4.84 0 01-9.66-.45z" stroke-opacity=".168" stroke="#FFF" stroke-width=".5" fill-opacity=".7" fill="url(#b)" transform="matrix(-1 0 0 1 22 0)"/>
+    </g>
+</svg>

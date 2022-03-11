@@ -1,0 +1,18 @@
+<svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient cx="50%" cy="65.549%" fx="50%" fy="65.549%" r="47.661%" gradientTransform="matrix(0 1 -.93888 0 1.115 .155)" id="a">
+            <stop stop-color="#FFF" stop-opacity=".35" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity=".36" offset="43.526%"/>
+            <stop stop-color="#FFF" stop-opacity=".5" offset="100%"/>
+        </radialGradient>
+        <radialGradient cx="50%" cy="63.339%" fx="50%" fy="63.339%" r="50.412%" gradientTransform="matrix(0 1 -.93888 0 1.095 .133)" id="b">
+            <stop stop-color="#FFF" stop-opacity=".45" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity=".55" offset="61.215%"/>
+            <stop stop-color="#FFF" stop-opacity=".7" offset="100%"/>
+        </radialGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" fill-opacity=".7">
+        <path d="M15.504 26.91H5.012a2.316 2.316 0 01-1.975-1.106 2.275 2.275 0 01-.07-2.252L8.345 13.39l4.723-8.923a2.758 2.758 0 012.433-1.468 2.747 2.747 0 012.433 1.462l4.727 8.929 5.217 9.855c.408.77.391 1.697-.045 2.452a2.426 2.426 0 01-2.101 1.214h-10.23z" fill="url(#a)" transform="rotate(90 15.438 14.954)"/>
+        <path d="M15.504 26.91H5.012a2.316 2.316 0 01-1.975-1.106h0a2.275 2.275 0 01-.07-2.252L8.345 13.39l4.723-8.923a2.758 2.758 0 012.433-1.468h0a2.747 2.747 0 012.433 1.462l4.727 8.929 5.217 9.855c.408.77.391 1.697-.045 2.452h0a2.426 2.426 0 01-2.101 1.214h-10.23z" stroke-opacity=".437" stroke="#FFF" stroke-width=".5" fill="url(#b)" transform="rotate(90 15.438 14.954)"/>
+    </g>
+</svg>

@@ -1,0 +1,928 @@
+{
+  "advance": {
+    "audioDelay": "오디오 지연",
+    "audioMenu": "오디오 설정",
+    "changeTrack": "오디오 트랙",
+    "chosenTrack": "태만",
+    "fontItems": [
+      "에스",
+      "엠",
+      "엘",
+      "특대"
+    ],
+    "fontSize": "글자 크기",
+    "fontStyle": "글꼴 스타일",
+    "rateTitle": "재생 속도",
+    "subDelay": "자막 지연",
+    "subMenu": "자막 설정",
+    "track": "선로"
+  },
+  "css": {
+    "titleFontSize": {
+      "fontSize": "21px"
+    },
+    "versionFontSize": {
+      "fontSize": "14px"
+    }
+  },
+  "tips": {
+    "openSidebar": "사이드 바 표시 (C)",
+    "closeSidebar": "사이드 바 숨김 (C)",
+    "exit": "시작 페이지로 돌아 가기",
+    "delete": "Back to Launching Page"
+  },
+  "errorFile": {
+    "ENOSPC": {
+      "content": "사용할 수있는 디스크 공간이 부족합니다.",
+      "title": "열기 실패"
+    },
+    "EACCES": {
+      "content": "충분한 권한이 없습니다.",
+      "title": "열기 실패"
+    },
+    "ENOENT": {
+      "content": "파일을 찾을 수 없습니다.",
+      "title": "열기 실패"
+    },
+    "addNoVideo": {
+      "content": "재생할 수있는 파일을 찾을 수 없습니다.",
+      "title": "파일 추가 실패"
+    },
+    "default": {
+      "content": "지원되지 않는 비디오 유형입니다.",
+      "title": "열기 실패"
+    },
+    "emptyFolder": {
+      "content": "재생할 수있는 파일을 찾을 수 없습니다.",
+      "title": "열기 실패"
+    },
+    "fileNonExist": {
+      "content": "목록에서 제거됩니다.",
+      "title": "파일을 찾을 수 없음"
+    },
+    "playlistNonExist": {
+      "content": "이 항목은 제거되었습니다.",
+      "title": "파일을 찾을 수 없음"
+    },
+    "fileNonExistInPlaylist": {
+      "content": "파일이 제거되었거나 이름이 변경되었습니다.",
+      "title": "일부 파일을 찾을 수 없습니다"
+    },
+    "loadFailed": {
+      "content": "자막 유형이 지원되지 않습니다.",
+      "title": "로드 자막 실패"
+    },
+    "offLine": {
+      "content": "네트워크를 확인한 후 다시 시도하십시오.",
+      "title": "네트워크 액세스 없음"
+    },
+    "timeout": {
+      "content": "네트워크 지연 또는 서버 오류.",
+      "title": "요청 시간 초과"
+    },
+    "localSubtitleRemoved": {
+      "title": "로드 자막 실패",
+      "content": "로컬 자막이 제거되거나 이름이 변경되었습니다."
+    }
+  },
+  "loading": {
+    "content": "번역로드 중 ...",
+    "title": ""
+  },
+  "msg": {
+    "audio": {
+      "decreaseAudioDelay": "오디오 지연",
+      "decreaseVolume": "볼륨 감소",
+      "defaultAudioTrack": "태만",
+      "increaseAudioDelay": "오디오 지연",
+      "increaseVolume": "볼륨 높이기",
+      "mute": "묵자",
+      "name": "오디오",
+      "switchAudioTrack": "오디오 트랙 전환"
+    },
+    "file": {
+      "clearHistory": "재생 기록 지우기",
+      "closeWindow": "창 닫기",
+      "name": "파일",
+      "open": "열다…",
+      "openUrl": "열린 URL...",
+      "openRecent": "열기 최근",
+      "copy": "부",
+      "paste": "풀",
+      "losslessStreaming": {
+        "losslessStreaming": "",
+        "select": "",
+        "selectCurrent": "",
+        "getInfo": "",
+        "stop": "",
+        "sharing": "",
+        "stopped": "",
+        "title": "",
+        "status": "",
+        "on": "",
+        "off": "",
+        "host": "",
+        "token": "",
+        "tip": "",
+        "tipWnB": ""
+      }
+    },
+    "account": {
+      "name": "계정",
+      "login": "로그인",
+      "logout": "로그 아웃"
+    },
+    "advanced": {
+      "name": "자막 도구",
+      "save": "구하다",
+      "undo": "끄르다",
+      "redo": "다시 하다",
+      "export": "수출",
+      "reference": "참고",
+      "loadLocalSubtitleFile": "로컬 추가 ...",
+      "back": "에디터 종료",
+      "enter": "편집",
+      "prev": "이전 클립",
+      "next": "다음 클립"
+    },
+    "help": {
+      "name": "도움",
+      "feedback": "피드백",
+      "homepage": "공식 사이트",
+      "splayerxHelp": "도움",
+      "shortCuts": "바로 가기 목록",
+      "uploadInfo": "버그 보고서 제출"
+    },
+    "playback": {
+      "backwardL": "단계 뒤로 -60 년대",
+      "backwardS": "스텝 뒤로 -5s",
+      "backwardPS": "단계 뒤로 -1 년대",
+      "captureScreen": "화면 캡처",
+      "captureVideoClip": "비디오 클립 캡처",
+      "decreasePlaybackSpeed": "재생 속도 감소",
+      "forwardL": "60 초 앞으로",
+      "forwardS": "1 단계 앞으로",
+      "forwardPS": "1 단계 앞으로",
+      "fullScreen": "전체 화면",
+      "increasePlaybackSpeed": "재생 속도 향상",
+      "name": "재생",
+      "pause": "중지",
+      "play": "놀이",
+      "resetSpeed": "재생 속도 재설정",
+      "nextVideo": "다음 동영상",
+      "showPlaylist": "재생 목록 표시",
+      "hidePlaylist": "재생 목록 숨기기",
+      "previousVideo": "이전 비디오",
+      "singleCycle": "하나 반복",
+      "playlistLoop": "반복 재생",
+      "snapShot": "스냅 샷",
+      "generateThumbnails": "썸네일 생성",
+      "generate3*3": "3 × 3 썸네일",
+      "generate4*4": "4 × 4 썸네일"
+    },
+    "splayerx": {
+      "about": "SPlayer 정보",
+      "checkForUpdates": "업데이트 확인",
+      "hide": "숨는 장소",
+      "hideOthers": "다른 사람 숨기기",
+      "preferences": "환경 설정",
+      "quit": "SPlayer 종료",
+      "showAll": "모두 표시"
+    },
+    "subtitle": {
+      "AITranslation": "스마트 번역 새로 고침",
+      "decreasePrimarySubtitleDelay": "자막 지연 -0.1s",
+      "increasePrimarySubtitleDelay": "자막 지연 +0.1s",
+      "decreaseSecondarySubtitleDelay": "자막 지연 -0.1s",
+      "increaseSecondarySubtitleDelay": "자막 지연 +0.1s",
+      "disabledSecondarySub": "보조 부제목 사용 중지",
+      "enabledSecondarySub": "보조 부제목 사용",
+      "langEn": "영어",
+      "langZhCN": "중국말",
+      "loadSubtitleFile": "자막 파일로드 중 ...",
+      "mainSubtitle": "1 차 자막",
+      "menuLoading": "로드 중 ...",
+      "name": "자막",
+      "noSubtitle": "찾을 수 없음",
+      "notToShowSubtitle": "닫기",
+      "secondarySubtitle": "보조 부제목",
+      "subtitleSetting": "자막 설정",
+      "subtitleDelay": "자막 지연",
+      "size1": "작은",
+      "size2": "표준",
+      "size3": "큰",
+      "size4": "특대",
+      "style1": "영화 스타일",
+      "style2": "애니메이션 스타일",
+      "style3": "복고풍 스타일",
+      "style4": "일본식",
+      "style5": "현대 클래식",
+      "subtitleSelect": "번역",
+      "subtitleSize": "글자 크기",
+      "subtitleStyle": "글꼴 스타일",
+      "uploadSelectedSubtitle": "선택한 부제목 업로드",
+      "referenceSubtitleSelect": "참고",
+      "noReferenceSubtitle": "떨어져서"
+    },
+    "titleName": "SPlayer",
+    "update": {
+      "message": "업데이트를 설치하려면 지금 앱을 다시 시작 하시겠습니까?",
+      "no": "아니",
+      "title": "업데이트 대화 상자",
+      "updateInstalled": "업데이트가 성공적으로 설치되었습니다!",
+      "yes": "예"
+    },
+    "window": {
+      "windowRotate": "시계 방향으로 90 ° 회전",
+      "keepPlayingWindowFront": "재생할 때 플로트",
+      "backToLandingView": "시작 페이지로 돌아 가기",
+      "bossKey": "보스 키",
+      "doubleSize": "200 %",
+      "enterFullScreen": "전체 화면으로 들어가기",
+      "exitFullScreen": "전체 화면 나가기",
+      "halfSize": "50 %",
+      "maxmize": "줌",
+      "minimize": "최소화",
+      "name": "창문",
+      "originSize": "100 %",
+      "enterPip": "Picture In Picture 사용",
+      "exitPip": "Picture In Picture 퇴출",
+      "playInNewWindow": "새 창에서 놀다",
+      "backToBrowser": "브라우저로 돌아 가기",
+      "openSidebar": "사이드 바 표시",
+      "closeSidebar": "사이드 바 숨김"
+    },
+    "edit": {
+      "name": "편집",
+      "cut": "잘라내기",
+      "copy": "복사",
+      "paste": "풀",
+      "selectAll": "전체 선택"
+    },
+    "history": {
+      "name": "역사",
+      "reload": "페이지 새로 고침",
+      "back": "뒤로",
+      "forward": "사전",
+      "clearHistory": "이동 기록 지우기"
+    }
+  },
+  "nextVideo": {
+    "nextInFolder": "폴더에서 다음",
+    "nextInPlaylist": "다음 재생 목록에서"
+  },
+  "welcome": {
+    "welcomeTitle": "Welcome to SPlayer",
+    "welcomeDescription": "All-new lightweight design, incredible performance with smart translation to let you enjoy your videos like never before.",
+    "agreement": "By using SPlayer, you agree to our ",
+    "policy": "Privacy Policy",
+    "languageTitle1": "Set your preferred subtitle",
+    "languageTitle2": "languages to fetch translations",
+    "primary": "Primary",
+    "secondary": "Secondary",
+    "chooseSecondary": "Select Secondary Language",
+    "languageDescription": "* You can change your settings in preferences later",
+    "none": "None"
+  },
+  "browsing": {
+    "customized": "맞춤 사이트",
+    "addSite": "사이트 추가",
+    "siteName": "사이트 명",
+    "siteAddress": "사이트 주소",
+    "namePlaceholder": "이름을 입력하십시오",
+    "addressPlaceholder": "URL을 입력하십시오",
+    "enterValidUrl": "정확한 URL을 입력해주세요",
+    "cancel": "취소",
+    "submit": "결정",
+    "loading": "로딩...",
+    "bilibili": "Bilibili",
+    "iqiyi": "iQIYI",
+    "youtube": "YouTube",
+    "huya": "Huya",
+    "qq": "Tencent Video",
+    "douyu": "Douyu",
+    "twitch": "Twitch",
+    "youku": "Youku",
+    "coursera": "Coursera",
+    "ted": "TED",
+    "lynda": "Lynda",
+    "masterclass": "MasterClass",
+    "sportsqq": "Tencent Sports",
+    "developerapple": "WWDC",
+    "vipopen163": "网易公开课",
+    "study163": "网易云课堂",
+    "imooc": "慕课网",
+    "icourse163": "中国大学MOOC",
+    "openLocalFile": "로컬 파일 열기 ...",
+    "enterPip": "Picture In Picture 사용",
+    "exitPip": "브라우저로 돌아 가기",
+    "enterPop": "새 창에서 놀다",
+    "exitPop": "브라우저로 돌아 가기",
+    "danmu": "탄막",
+    "pin": "Pin / Unpin (T)",
+    "error": {
+      "offline": "인터넷이 없습니다",
+      "try": "시험:",
+      "firstLine": "네트워크 케이블, 모뎀 및 라우터 확인",
+      "secondLine": "Wi-Fi에 다시 연결"
+    },
+    "remove": "제거",
+    "edit": "편집",
+    "delete": "삭제",
+    "siteManager": "사이트 관리자",
+    "general": "종합적인",
+    "education": "교육",
+    "siteTip": "편집 / 추가",
+    "today": "오늘",
+    "yesterday": "어제",
+    "nameInvalid": "The site name contains invalid characters. ",
+    "saveTemporary": "더하다",
+    "homepage": {
+      "tips": "홈페이지",
+      "unSigned": "로그인되지 않았습니다",
+      "signInfo": "Sign in to use AI Translation and get access to more features.",
+      "signBtn": "로그인",
+      "account": "Account: ",
+      "signOut": "로그 아웃",
+      "accountInfo": "Upgrade your account now and get started with exclusive features and more.",
+      "premiumBtn": "Upgrade",
+      "premiumInfo": "Registration Date: ",
+      "renewBtn": "갱신 수수료",
+      "history": "온라인 역사",
+      "clear": "명확한",
+      "historyInfo": "Keep track of your playback history, including the page title, the site address and the date you watched.",
+      "playlist": "로컬 재생 목록",
+      "playlistInfoPre": "Click the ",
+      "playlistInfoNext": " button on the left sidebar, choose and open more than one file to generate a playlist.",
+      "banner1": "의견 제출",
+      "banner2": "현지화 프로젝트<br>참여",
+      "banner3": "릴리즈 노트"
+    },
+    "download": {
+      "fileName": "파일명",
+      "resolution": "해상도",
+      "saveTo": "저장 위치",
+      "cancel": "취소",
+      "submit": "다운로드",
+      "downloadManager": "다운로드 관리자",
+      "resumeAll": "Resume All",
+      "pauseAll": "Pause All",
+      "clearAll": "Remove Completed",
+      "remove": "제거",
+      "premium": "You can download 1 video per day. ",
+      "selectUnavailable": "High-definition videos for premium users only. ",
+      "premiumBtn": "Go Premium",
+      "paused": "Paused",
+      "failed": "Failed",
+      "completed": "Completed",
+      "limited": "Uses Remaining: 0",
+      "loading": "Loading...",
+      "noHistory": "기록 없음",
+      "downloadCompleted": "다운로드 완료",
+      "sitesLimited": "According to local laws and regulations, videos from this site could not be downloaded.",
+      "noResources": "Unable to find any videos that can be downloaded from this page.",
+      "unknownError": "Failed to fetch the video metadata, please try again later.",
+      "startDownloadError": "Network error, please try again later.",
+      "downloadingError": "네트워크 오류",
+      "downloadMenu": "다운로드",
+      "fileRemoved": "File Not Found",
+      "unknownResolution": "Unknown Resolution",
+      "fileNameInvalid": "The file name contains invalid characters.",
+      "vcRuntime": "다운로드 도구를 사용하려면 Microsoft Visual C ++ 2010 런타임을 설치해야합니다.",
+      "clickToSelect": "Click to select"
+    },
+    "copied": "URL 복사됨",
+    "copyUrlTitle": "URL 복사"
+  },
+  "preferences": {
+    "general": {
+      "hideHistory": "재생 기록 숨기기",
+      "reverseScrolling": "마우스 스크롤 역전",
+      "setDefault": "기본 동영상 플레이어로 설정",
+      "setDefaultDescription": "SPlayer 로 모든 비디오 파일 열기.",
+      "restoreSettings": "모든 콘텐츠 및 설정 지우기",
+      "restoreSettingsDescription": "모든 로컬 데이터 및 캐시 파일을 삭제하고 다시 시작하십시오.",
+      "restoreSettingsAfterRelaunch": "적용을 위해 재시작.",
+      "setButton": "대다",
+      "relaunch": "재시작",
+      "displayLanguage": "표시 언어",
+      "generalSetting": "일반",
+      "others": "기타",
+      "HD": "Hardware Decoding",
+      "HDDescription": "Enable H/W Decoding will significantly reduce CPU usage. However, please deselect the option and {link} feedback to us if you have trouble playing videos.",
+      "HDLink": "send",
+      "switchDisplayLanguages": "표시 언어는 SPlayer에 표시되는 언어를 제어합니다.",
+      "isDarkMode": "어두운 테마를 활성화",
+      "snapshotPath": "스크린 샷 폴더",
+      "select": "선택"
+    },
+    "translate": {
+      "languageDescription": "Upload anonymous data to fetch subtitle results in the following language,  no privacy information will be included.",
+      "languagePriority": "언어 환경 설정",
+      "none": "없음",
+      "primary": "행성",
+      "translateConfirm": "Enable Smart Subtitle",
+      "translateSetting": "부제",
+      "secondary": "반성",
+      "setAsDefault": "SPlayer를 기본 응용 프로그램으로 설정",
+      "settings": "설정"
+    },
+    "video": {
+      "videoSetting": "비디오"
+    },
+    "privacy": {
+      "privacySetting": "은둔",
+      "incognitoMode": "Incognito Mode",
+      "incognitoDescription": "재생 기록이 저장되지 않습니다.",
+      "clearHistory": "재생 기록 지우기",
+      "clearHistoryDescription": "기존 재생 목록 및 재생 기록 제거"
+    },
+    "account": {
+      "accountSetting": "계정",
+      "title": "계정 정보",
+      "noToken": {
+        "title": "Not Signed In",
+        "description": "Sign in with your phone number to use AI Translation and more advanced features.",
+        "button": "Sign In"
+      },
+      "normalUser": {
+        "title": "Account: ",
+        "registration": "Registration Date: {date}",
+        "description": "Upgrade your account now and get started with exclusive features and more.",
+        "descriptionAPPX": "Advanced features are not available in the Microsoft Store version.",
+        "button": "Upgrade"
+      },
+      "vipUser": {
+        "title": "Premium Account: ",
+        "description": "Expiration Date: ",
+        "button": "갱신 수수료"
+      },
+      "month": " Month",
+      "year": " Year",
+      "months": " Years",
+      "years": " Years",
+      "signOut": "로그 아웃",
+      "createdAt": "등록 날짜",
+      "payAt": "최근 구매",
+      "payContent": "{date}{product}",
+      "payProduct": ": {product} Premium",
+      "pointsTitle": "AI Translation Points: {points}",
+      "pointsDescription": "AI Translation Points will be consumed based on the amount of audio successfully processed by the service of translation and speech recognition. (1 Point / Min)",
+      "buyPoints": "Get More Points",
+      "viewHistory": ""
+    },
+    "premium": {
+      "premiumSetting": "Premium",
+      "title": "SPlayer Premium",
+      "title1": "Premium Service Updated",
+      "description": "Additional hours of AI Translation service",
+      "description1": "We’ve made some updates to the Premium services, please download the latest version of SPlayer. <br/><br/>The AI Translation Points Pack will be available in the new release. The Points is consumed based on the amount of audio successfully processed by the service of translation and speech recognition. Current Premium members will get extra ( Remaining Days of Premium Service * 60 ) AI Translation Points.",
+      "explanation": {
+        "title": "About the Pricing",
+        "description1": "Applying a complex Translation System, which supports the translation of multiple languages and the speech recognition of long duration videos, has been incurring massive ongoing maintenance costs so far.",
+        "description2": "We are thrilled to your strong support, of which the impact and power will help us make the SPlayer better, and your adoption of the new technology will finally contribute to briding the language gaps and connecting the world.",
+        "description3": "Best Regards,",
+        "description4": "SPlayer Team",
+        "description5": "2019",
+        "description6": "Only the monthly payment plan is available during the open beta test."
+      },
+      "content": {
+        "description1": "Smart Translation and Speech Recognition with 180 mins free trial per month (Orig. $6.8)",
+        "description2": "Smart Translation and Speech Recognition expansion pack at a discount (Start with $0.025 / min)",
+        "description3": "Smart Translation and Speech Recognition supports more languages",
+        "description4": "Edit and export subtitles and translation results",
+        "description5": "Download online videos with no usage limits",
+        "description6": "Fetch online subtitles on the mobile version (In development)",
+        "description7": "More advanced features are coming soon ..."
+      },
+      "origin": "ORIG. ",
+      "off": "% Off",
+      "month": " Month",
+      "year": " Year",
+      "months": " Yr.",
+      "years": " Yr.",
+      "normal": "Standard",
+      "giftmonth": "{num} Bonus Month",
+      "giftyear": "{num} Bonus Year",
+      "giftmonths": "{num} Bonus Months",
+      "giftyears": "{num} Bonus Years",
+      "payType": {
+        "alipay": "Alipay",
+        "wxpay": "WeChat",
+        "paypal": "PayPal"
+      }
+    },
+    "translationEdit": {
+      "translationEditSetting": "편집자",
+      "quickEdit": "빠른 편집",
+      "quickEditDescription": "동영상이 일시 중지되면 선택한 번역을 빠르게 편집 할 수 있습니다."
+    },
+    "points": {
+      "pointsSetting": "번역",
+      "title": "AI Translation Points",
+      "titleLave": "Balance: {points}",
+      "description": "AI Translation Points will be consumed based on the amount of audio successfully processed by the service of translation and speech recognition. (1 Point / Min) Your Points will no longer expire.",
+      "guestWarning": "",
+      "beVip": "upgrade",
+      "minute": "{number} Points",
+      "origin": "{price}",
+      "premium": "Premium {price}",
+      "minutePer": "{price} / Min",
+      "service": ""
+    }
+  },
+  "payment": {
+    "wxpay": {
+      "title": "SCAN & PAY",
+      "description": "WeChat Pay"
+    },
+    "fail": "Error"
+  },
+  "privacyBubble": {
+    "confirmDisable": {
+      "button": "취소",
+      "partOne": "확인",
+      "partTwo": "익명 데이터 및 스마트 번역.",
+      "underlinedContent": "사용 안함"
+    },
+    "masVersion": {
+      "agree": "사용",
+      "content": "스마트 번역 기능은 익명의 미디어 정보를 서버 측에 업로드하는 데 동의해야하며 동의하지 않으면 번역 결과를받지 못합니다. 개인 정보가 수집되지 않습니다.",
+      "disagree": "사용 안함"
+    },
+    "tryToDisable": {
+      "button": "승인",
+      "partOne": "SPlayer는 익명 데이터를 사용하여 사용자 경험을 향상시킵니다. 스마트 번역은 귀하가",
+      "partTwo": ".",
+      "underlinedContent": "동의하지 않는다"
+    }
+  },
+  "alertBubble": {
+    "button": "승인"
+  },
+  "notExportEmbeddedSubtitle": {
+    "title": "",
+    "content": "The selected subtitle is loading, please try to export it later"
+  },
+  "forbiddenExportEmbeddedSubtitle": {
+    "title": "",
+    "content": "Unable to export image-based subtitles"
+  },
+  "appxNotExport": {
+    "title": "Not Available",
+    "content": "Advanced features are not available in the Microsoft Store version."
+  },
+  "protectBubble": {
+    "agree": "승인",
+    "setting": "설정",
+    "content": "스마트 개인 정보 보호가 사용됩니다. 민감하거나 작동에 적합하지 않은 재생 기록은 삭제됩니다."
+  },
+  "checkForUpdatesBubble": {
+    "needUpdate": {
+      "confirm": "다운로드",
+      "cancel": "버킷",
+      "content": "새 버전 {version} 이릴리스되었습니다. 업데이트를 즉시 다운로드 하시겠습니까?"
+    },
+    "noNeed": {
+      "content": "SPlayer가 최신입니다. 버전 {version}"
+    }
+  },
+  "editorBubble": {
+    "saved": {
+      "content": "자막이 저장되었습니다",
+      "title": ""
+    },
+    "referenceIdNotExist": {
+      "content": "참조가 업데이트 또는 삭제되었습니다.",
+      "title": "Load Reference Failed"
+    },
+    "referenceLoading": {
+      "content": "Loading Reference ...",
+      "title": ""
+    },
+    "deleteSubtitleBubble": {
+      "confirm": "삭제",
+      "cancel": "취소",
+      "content": "당신은 자막을 삭제 하시겠습니까?"
+    },
+    "notWork": {
+      "title": "",
+      "content": "The selected subtitle is loading, please try to edit it later"
+    },
+    "forbidden": {
+      "title": "",
+      "content": "Unable to edit image-based subtitles"
+    }
+  },
+  "recentPlaylist": {
+    "folderSource": "폴더",
+    "playing": "연주 중",
+    "paused": "일시 중지 된",
+    "playlistSource": "재생 목록",
+    "add": "재생 목록에 추가",
+    "pin": "재생 목록을 시작 페이지에 고정",
+    "pinned": "시작 페이지에 고정 된 재생 목록"
+  },
+  "subtitle": {
+    "embedded": "깊숙이 박다",
+    "modified": "내 자막",
+    "generate": "일으키다",
+    "language": {
+      "ar": "아라비아 말",
+      "de": "독일 사람",
+      "en": "영어",
+      "es": "스페인 사람",
+      "fr": "프랑스 국민",
+      "hi": "힌디 어",
+      "it": "이탈리아 사람",
+      "ja": "일본어",
+      "ko": "한국어",
+      "pt": "포르투갈어 (포르투갈, 브라질)",
+      "ru": "러시아인",
+      "zh": "중국어 (간체)",
+      "zh-CN": "중국어 (간체)",
+      "zh-TW": "중국어 (번체)"
+    },
+    "tips": {
+      "editor": "Edit is coming soon ...",
+      "export": "내보내기",
+      "reload": "재생",
+      "delete": "제거"
+    },
+    "createSubtitle": {
+      "placeholder": "자막을 추가하려면 클릭"
+    }
+  },
+  "uploading": {
+    "content": "자막 업로드 중 ...",
+    "title": ""
+  },
+  "uploadingFailed": {
+    "content": "나중에 다시 시도 해주세요.",
+    "title": "업로드 실패"
+  },
+  "uploadingSuccess": {
+    "content": "부제목이 업로드되었습니다.",
+    "title": "성공적으로 업로드"
+  },
+  "cannotUpload": {
+    "title": "",
+    "content": "Unable to upload image-based subtitles"
+  },
+  "cannotExport": {
+    "title": "",
+    "content": "Unable to export image-based subtitles"
+  },
+  "bugUploading": {
+    "content": "보고서 제출 중...",
+    "title": ""
+  },
+  "bugUploadFailed": {
+    "content": "나중에 다시 시도 해주세요.",
+    "title": "전송 실패"
+  },
+  "bugUploadSuccess": {
+    "content": "당신의 지원에 감사드립니다.",
+    "title": "성공적으로 제출"
+  },
+  "thumbnailGenerating": {
+    "content": "썸네일 생성",
+    "title": ""
+  },
+  "thumbnailSuccess": {
+    "content": "성공적으로 생성",
+    "title": "Generate Successfully"
+  },
+  "thumbnailFailed": {
+    "content": "생성 실패",
+    "title": "Generate Failed"
+  },
+  "snapshotSuccess": {
+    "content": "성공적인 스냅 샷",
+    "title": "Snapshot Successfully"
+  },
+  "snapshotFailed": {
+    "content": "나중에 다시 시도 해주세요.",
+    "title": "스냅 샷 실패"
+  },
+  "loadVideoBySubtitleFailed": {
+    "content": "폴더에서 관련 비디오를 찾지 않습니다",
+    "title": ""
+  },
+  "translateModal": {
+    "videoLanguageLabel": "오디오 언어",
+    "subtitleLanguageLabel": "번역할 언어",
+    "selectLanguageLabel": "오디오 언어",
+    "selectLanguageMoreLabel": "더보기 ...",
+    "audioLanguageLoading": "언어 목록을 가져 오는 중 ...",
+    "audioLanguageLoadFail": "연결에 실패했습니다. 나중에 다시 시도하십시오",
+    "select": {
+      "title": "오디오 언어 선택",
+      "content": "번역 결과를 생성하려면 동영상에서 들리는 언어를 선택하고 생성 버튼을 클릭하십시오. 과정에 약간의 시간이 걸릴 수 있습니다.",
+      "contentLimit": "비디오에서들을 언어를 선택하고 생성 버튼을 클릭하십시오. 하루에 하나의 AI 번역을 무료로 생성 할 수 있습니다."
+    },
+    "translate": {
+      "title": "{time} 정보 남음",
+      "minute": "{number} 분",
+      "second": "{number} 초",
+      "hour": "{number} 시간",
+      "content": "비디오를 건너 뛰거나 응용 프로그램을 닫지 마십시오. 번역 패널에서 진행률을 확인할 수 있습니다.",
+      "contentSearch": "찾고 ...",
+      "contentTranslate": "소스 언어 자막이 발견되어 지능적으로 번역되고 있습니다 ...",
+      "contentGrabbing": "오디오를 추출하는 중 소스 언어 자막을 찾을 수 없습니다 ...",
+      "contentGrabComplated": "오디오 추출이 완료되어 업로드 중 ...",
+      "contentSpeech": "오디오 업로드 완료, 음성 인식 및 지능형 번역 ..."
+    },
+    "success": {
+      "title": "번역 완료",
+      "content": "AI 번역이 준비되었습니다. 번역 패널에서 확인하십시오."
+    },
+    "discard": {
+      "title": "인공 지능 번역이 진행 중입니다.",
+      "content": "종료 하시겠습니까? 종료하면 번역 진행 상태가 복원되지 않습니다."
+    },
+    "noLineFail": {
+      "title": "네트워크 오류",
+      "content": "네트워크 연결을 확인하고 다시 시도하십시오."
+    },
+    "timeOutFail": {
+      "title": "접속 시간 초과",
+      "content": "서버에 대한 연결이 실패했습니다. 나중에 다시 시도 해주세요."
+    },
+    "serverErrorFail": {
+      "title": "번역 실패",
+      "content": "서버 오류로 인해 변환에 실패했습니다. 나중에 다시 시도 해주세요."
+    },
+    "ForbiddenFail": {
+      "title": "세션 만료됨",
+      "content": "로그인 해주시기 바랍니다"
+    },
+    "ExistsFail": {
+      "title": "번역 실패",
+      "content": "이전 번역 작업이 서버에서 처리되고 있습니다. 나중에 다시 시도하십시오."
+    },
+    "ExhaustedFail": {
+      "title": "Maximum Limit Reached",
+      "content": "It seems like you have translated a lot of videos today! Need extra time? Contact us via support@splayer.org."
+    },
+    "PermissionFail": {
+      "title": "Not Enough Points",
+      "content": "Required Points for This Video: {duration}<br/>Current Points Balance: {points}"
+    },
+    "PermissionFailAPPX": {
+      "title": "Not Available",
+      "content": "Advanced features are not available in the Microsoft Store version."
+    },
+    "buyPoints": {
+      "title": "Purchasing ...",
+      "content": "Please make the payment in the new window. Do not close this window until you complete the purchase.",
+      "button": {
+        "left": "Payment Successful",
+        "right": "Abort"
+      }
+    },
+    "loading": "처리중 ...",
+    "cancel": "취소",
+    "quit": "떠나다",
+    "generate": "일으키다",
+    "ok": "Ejecutar en segundo plano",
+    "continue": "취소",
+    "upgrade": "Get More Points",
+    "okAPPX": "OK",
+    "pointsContent": "Cost: {duration} Points, Balance: {points} Points",
+    "pointsButton": "Get Points"
+  },
+  "translateBubble": {
+    "bubbleWhenGrab": "인공 지능 번역이 중단됩니다. 계속한다면 어쨌든 계속 하시겠습니까?",
+    "bubbleWhenTranslate": "AI 번역이 서버에서 처리 중입니다. 다음에 비디오를 볼 때 진행 상태를 확인할 수 있습니다.",
+    "bubbleFunctionForbidden": "인공 지능 번역이 중단됩니다. 계속한다면 어쨌든 계속 하시겠습니까?",
+    "bubbleWhenSuccess": {
+      "title": "",
+      "content": "AI 번역이 준비되었습니다. 번역 패널에서 번역을 확인하십시오."
+    },
+    "bubbleWhenSuccessOnOtherVideo": {
+      "title": "",
+      "content": "AI 번역이 준비되었습니다. 다음에 비디오를 볼 때 자동으로로드됩니다."
+    },
+    "bubbleTranslateNoLineFail": {
+      "title": "네트워크 오류",
+      "content": "네트워크 연결을 확인하고 다시 시도하십시오."
+    },
+    "bubbleTranslateTimeOutFail": {
+      "title": "접속 시간 초과",
+      "content": "서버에 대한 연결이 실패했습니다. 나중에 다시 시도 해주세요."
+    },
+    "bubbleTranslateServerErrorFail": {
+      "title": "번역 실패",
+      "content": "서버 오류로 인해 변환에 실패했습니다. 나중에 다시 시도 해주세요."
+    },
+    "bubbleTranslateForbiddenFail": {
+      "title": "세션 만료됨",
+      "content": "로그인 해주시기 바랍니다."
+    },
+    "bubbleTranslateExistsFail": {
+      "title": "번역 실패",
+      "content": "이전 번역 작업이 서버에서 처리되고 있습니다. 나중에 다시 시도하십시오."
+    },
+    "bubbleTranslateExhaustedFail": {
+      "title": "Maximum Limit Reached",
+      "content": "It seems like you have translated a lot of videos today! Need extra time? Contact us via support@splayer.org."
+    },
+    "bubbleTranslatePermissionFail": {
+      "title": "오늘 남은 사용량: 0",
+      "titleAPPX": "Not Available",
+      "content": "죄송합니다. 하루에 하나의 AI 번역 결과 만 생성 할 수 있습니다.",
+      "contentAPPX": "Advanced features are not available in the Microsoft Store version."
+    },
+    "ok": "승인",
+    "cancel": "취소",
+    "continue": "잇다"
+  },
+  "openUrl": {
+    "httpAuthentication": "HTTP 인증",
+    "open": "열린",
+    "url": {
+      "placeholder": "URL을 입력하십시오 ..."
+    },
+    "username": {
+      "placeholder": "사용지 이름"
+    },
+    "password": {
+      "placeholder": "비밀 번호"
+    }
+  },
+  "loginModal": {
+    "title": "전화번호로 로그인",
+    "sendCode": "보내기",
+    "sendingCode": "송신중 ...",
+    "countDown": "{count} 초",
+    "placeholder": {
+      "mobile": "전화번호",
+      "code": "인증 코드 입력"
+    },
+    "submit": "로그인",
+    "submitting": "처리중 ...",
+    "codeError": "잘못된 검증 코드",
+    "netWorkError": "접속 시간 초과",
+    "noLineError": "연결된 네트워크가 없습니다",
+    "afsError": "Captcha Validation Failed",
+    "afs": {
+      "start": "Please slide to verify",
+      "yes": "Success",
+      "retry": "retry",
+      "error300": "Verification failed, please",
+      "errorNetwork": "Network Error. Please"
+    }
+  },
+  "forbiddenModal": {
+    "title": "Upgrade to SPlayer Premium",
+    "content": "Upgrade to export translation results unlimitedly, and get access to more exclusive features.",
+    "span": "Already Premium? Sign In",
+    "button": "Go Premium Now",
+    "audioLanguage": "日本語, 한국어, Español, Français, Deutsch, Italiano, Português, čeština, Русский, Indonesian, العربية, Türkçe, română",
+    "translate": {
+      "title": "Upgrade to SPlayer Premium",
+      "titleAPPX": "Not Available",
+      "content": "Go Premium to get access to more languages and other exclusive features.",
+      "contentAPPX": "Advanced features are not available in the Microsoft Store version.",
+      "span": "Already Premium? Sign In",
+      "button": "Go Premium Now"
+    },
+    "export": {
+      "title": "Upgrade to SPlayer Premium",
+      "content": "Upgrade to export translation results unlimitedly, and get access to more exclusive features.",
+      "span": "Already Premium? Sign In",
+      "button": "Go Premium Now"
+    }
+  },
+  "premiumModal": {
+    "loading": {
+      "content": "Processing，please wait a second …",
+      "button": "Close"
+    },
+    "success": {
+      "h2": "Thanks for your support",
+      "h1": "Payment Successful !",
+      "h4": "NOW",
+      "pointsContent": "Your Point Balance: {points}",
+      "content1": "Smart Translation and Speech Recognition with 180 mins free trial per month",
+      "content2": "Smart Translation and Speech Recognition expansion pack at a discount (Start with $0.025 / min)",
+      "content3": "Smart Translation and Speech Recognition supports more languages",
+      "content4": "Edit and export subtitles and translation results",
+      "content5": "Download online videos with no usage limits",
+      "content6": "Fetch online subtitles on the mobile version (In development)",
+      "content7": "More advanced features are coming soon ...",
+      "button": "Done"
+    },
+    "fail": {
+      "h1": "Sorry",
+      "content": "Your transaction could not be processed，please contact us",
+      "copy": "Copy",
+      "copied": "Copied",
+      "button": "Back"
+    }
+  },
+  "about": {
+    "credits": "Credits"
+  }
+}

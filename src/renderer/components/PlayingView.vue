@@ -14,6 +14,13 @@
       :saved-name="savedName"
       @generated="generatePost = false"
     />
+    <lean-cloud-setup
+      v-if="showLCSetup"
+      :init-client.sync='lcClient'
+      :init-connected.sync='lcConnected'
+      :show-add-channel.sync="showLCSetup"
+      class="lc-setup"
+    />
   </div>
 </template>
 
@@ -30,10 +37,12 @@ import { AudioTranslateBubbleType } from '@/store/modules/AudioTranslate';
 import { offListenersExceptWhiteList } from '@/libs/utils';
 import { videodata } from '../store/video';
 import { getStreams } from '../plugins/mediaTasks';
+import LeanCloudSetup from '@/components/PlayingView/LeanCloudSetup.vue';
 
 export default {
   name: 'PlayingView',
   components: {
+    'lean-cloud-setup': LeanCloudSetup,
     'the-video-controller': TheVideoController,
     'the-video-canvas': VideoCanvas,
     'subtitle-image-renderer': SubtitleImageRenderer,
@@ -57,6 +66,9 @@ export default {
       generateType: NaN,
       showingPopupDialog: false,
       savedName: '',
+      showLCSetup: false,
+      lcConnected: false,
+      lcClient: null,
     };
   },
   computed: {
@@ -88,6 +100,9 @@ export default {
     },
   },
   mounted() {
+    this.$bus.$on('show-lc-setup', (showLCSetup) => {
+      this.showLCSetup = showLCSetup;
+    });
     this.$store.dispatch('initWindowRotate');
     this.$electron.ipcRenderer.send('callMainWindowMethod', 'setMinimumSize', [320, 180]);
     // 这里设置了最小宽高，需要同步到vuex
@@ -114,6 +129,9 @@ export default {
   beforeDestroy() {
     this.updateSubToTop(false);
     videodata.stopCheckTick();
+  },
+  destroyed() {
+    this.$bus.$off('show-lc-setup');
   },
   methods: {
     ...mapMutations({
@@ -179,5 +197,8 @@ export default {
 
   height: 100%;
   background-color: black;
+}
+.lc-setup {
+  -webkit-app-region: no-drag;
 }
 </style>

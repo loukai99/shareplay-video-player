@@ -93,6 +93,31 @@
             </div>
           </div>
         </div>
+        <div
+          :style="{ cursor: 'pointer' }"
+          @mouseenter="handleMouseenter(3)"
+          @mouseleave="handleMouseleave()"
+          @click.left="handleSyncClick"
+          class="audioItems"
+        >
+          <transition name="arrow">
+            <div
+              v-show="hoverIndex === 3"
+              class="hoverAudioBack"
+            />
+          </transition>
+          <div class="audioContainer">
+            <div
+              :style="{
+                color: hoverIndex === 3 ? 'rgba(255, 255, 255, 0.9)' : 'rgba(255, 255, 255, 0.6)',
+                transition: 'color 300ms',
+              }"
+              class="item3"
+            >
+              <p>同步配置</p>
+            </div>
+          </div>
+        </div>
       </div>
     </transition>
 
@@ -269,6 +294,7 @@ export default {
   },
   data() {
     return {
+      showLCSetup: false,
       numList: [0.5, 1, 1.2, 1.5, 2],
       speedChosen: false,
       rightArrowSub: false,
@@ -445,7 +471,7 @@ export default {
       return this.$t('advance.chosenTrack');
     },
     menuCardHeight() {
-      return this.speedChosen ? `${this.initialSize(164)}px` : `${this.initialSize(127)}px`;
+      return this.speedChosen ? `${this.initialSize(200)}px` : `${this.initialSize(163)}px`;
     },
     subtitleCardHeight() {
       return !this.subColorChosen && !this.subSizeChosen && !this.subDelayChosen
@@ -675,6 +701,10 @@ export default {
     },
     handleAudioClick() {
       this.readyShow = 'audioMenu';
+      this.speedChosen = false;
+    },
+    handleSyncClick() {
+      this.$bus.$emit('show-lc-setup', true);
       this.speedChosen = false;
     },
     handleMouseenter(index: number) {

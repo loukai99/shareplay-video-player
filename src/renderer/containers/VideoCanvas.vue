@@ -47,7 +47,7 @@
 import { mapGetters, mapActions, mapMutations } from 'vuex';
 import path from 'path';
 import { debounce, throttle } from 'lodash';
-import { IMClient, Realtime, TextMessage } from 'leancloud-realtime/es-latest';
+import { TextMessage } from 'leancloud-realtime/es-latest';
 import { windowRectService } from '@/services/window/WindowRectService';
 import { playInfoStorageService } from '@/services/storage/PlayInfoStorageService';
 import { settingStorageService } from '@/services/storage/SettingStorageService';
@@ -88,10 +88,6 @@ export default {
       userId: '', // userId，用以区分哪个用户发送的消息
       // leancloud-realtime 添加以下变量，appId、appKey、server这几个值去leancloud控制台>设置>应用凭证里面找
       chatRoom: null,
-      // 需要修改
-      appId: '*',
-      appKey: '*',
-      server: '*', // REST API 服务器地址
     };
   },
   computed: {
@@ -172,44 +168,14 @@ export default {
     this.updatePlayinglistRate({ oldDir: '', newDir: path.dirname(this.originSrc), playingList: this.playingList });
   },
   mounted() {
-    /* 生成10位userId */
-    this.userId = randomString(10);
     // eslint-disable-next-line @typescript-eslint/no-this-alias
     const that = this;
-    let client: IMClient;
     let room;
-    // 换成你自己的一个房间的 conversation id（这是服务器端生成的），第一次执行代码就会生成，在leancloud控制台>即时通讯>对话下面，复制一个过来即可
-    let roomId = '*';
 
-    const realtime = new Realtime({
-      appId: this.appId,
-      appKey: this.appKey,
-      server: this.server,
-    });
-
-    realtime.createIMClient(this.userId).then((c) => {
-      client = c;
-      // 获取对话
-      return c.getConversation(roomId);
-    })
-      .then((conversation) => {
-        if (conversation) {
-          return conversation;
-        }
-        // 如果服务器端不存在这个 conversation
-        return client
-          .createConversation({
-            name: 'LeanCloud-Conversation',
-            // 创建暂态的聊天室（暂态聊天室支持无限人员聊天）
-            transient: true,
-          })
-          .then((conversation) => {
-            roomId = conversation.id;
-            return conversation;
-          });
-      })
-      .then(conversation => conversation.join())
-      .then((conversation) => {
+    this.$bus.$on('lc-conversation', (conversationInfo) => {
+      that.userId = conversationInfo.userId;
+      const conversation = conversationInfo.conversation;
+      conversation.join().then((conversation) => {
         // 获取聊天历史
         room = conversation;
         that.chatRoom = conversation;
@@ -219,10 +185,10 @@ export default {
           const result = JSON.parse(message._lctext);
           that.resultHandler(result);
         });
-      })
-      .catch((err) => {
+      }).catch((err) => {
         console.error(err);
       });
+    });
     this.audioCtx = new AudioContext();
     this.$bus.$on('back-to-landingview', () => {
       if (this.isTranslating) {
@@ -341,6 +307,9 @@ export default {
     this.audioCtx.close();
     if (process.mas) this.$bus.$emit(`stop-accessing-${this.originSrc}`, this.originSrc);
     window.removeEventListener('beforeunload', this.beforeUnloadHandler);
+  },
+  destroyed() {
+    this.$bus.$off('lc-conversation');
   },
   methods: {
     ...mapMutations({

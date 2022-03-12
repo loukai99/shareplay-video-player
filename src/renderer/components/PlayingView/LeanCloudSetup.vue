@@ -176,21 +176,15 @@ export default {
       this.roomId = localStorage.roomId;
     }
   },
-  watch: {
-    appId(newValue) {
-      localStorage.appId = newValue;
-    },
-    appKey(newValue) {
-      localStorage.appKey = newValue;
-    },
-    server(newValue) {
-      localStorage.server = newValue;
-    },
-    roomId(newValue) {
-      localStorage.roomId = newValue;
-    },
-  },
   methods: {
+    saveLCParam() {
+      localStorage.appId = this.appId;
+      localStorage.appKey = this.appKey;
+      localStorage.server = this.server;
+    },
+    saveRoomId() {
+      localStorage.roomId = this.roomId;
+    },
     // eslint-disable-next-line complexity
     handleKeydown(e: KeyboardEvent) {
       if (e.code === 'Enter') {
@@ -223,6 +217,7 @@ export default {
       // eslint-disable-next-line @typescript-eslint/no-this-alias
       const that = this;
       if (that.client === null) {
+        this.saveLCParam();
         this.getLeanCloudInfo = true;
         const realtime = new Realtime({
           appId: this.appId,
@@ -239,6 +234,7 @@ export default {
             that.conversation = conversation;
             that.connected = true;
             that.$emit('update:initConnected', true);
+            this.saveRoomId();
             that.getLeanCloudInfo = false;
             that.$bus.$emit('lc-conversation', {
               conversation: that.conversation,
@@ -255,6 +251,7 @@ export default {
               that.roomId = that.conversation.id;
               that.connected = true;
               that.$emit('update:initConnected', true);
+              this.saveRoomId();
               that.getLeanCloudInfo = false;
               that.$bus.$emit('lc-conversation', {
                 conversation: that.conversation,

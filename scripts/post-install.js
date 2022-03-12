@@ -6,7 +6,7 @@ require('events').EventEmitter.prototype._maxListeners = 10000;
 
 const commands = [
   'node scripts/gen-electron-builder-config.js',
-  // 'npm run lint:fix',
+  'npm run lint:fix',
   'npm run install-app-deps',
 ];
 

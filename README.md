@@ -1,11 +1,14 @@
-# 支持多方同步播放的视频播放器
+# 支持多方异地同步播放的视频播放器
 
 ## 功能介绍
 基于splayer开源代码二次开发，增加同步播放功能，可自定义LeanCloud接口。
-同步功能基于LeanCloud的即时通讯服务实现，支持多客户端同步播放，暂停，倍速，拖动进度条功能等。
+同步功能基于LeanCloud的即时通讯服务实现，支持多客户端同步播放，暂停，倍速，拖动进度条等功能。
 支持Windows和MacOS。（现阶段仅支持本地影片，各方都需要在本地存有同一个视频才可以进行同播）
 
 [下载地址](https://github.com/loukai99/shareplay-video-player/releases)
+
+## 效果演示
+![](./READMEImage/shareplay效果演示.gif)
 
 ## 如何使用播放器
 1. 首先，您需要注册一个LeanCloud免费账号以备使用 ([LeanCloud官网](https://www.leancloud.cn/)) ，LeanCloud为免费用户提供120次/分钟的免费消息次数，足够个人使用。

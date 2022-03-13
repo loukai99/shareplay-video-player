@@ -96,16 +96,19 @@
           <button
             :style="{
               // eslint-disable-next-line max-len
-              opacity: getLeanCloudInfo || isDarkMode ? 1 : (appId && appKey && server && !connected) ? '' : '0.5',
+              opacity: getLeanCloudInfo || isDarkMode ? 1 : (appId && appKey && server && !connected && !getLeanCloudInfo) ? '' : '0.5',
               // eslint-disable-next-line max-len
-              color: !getLeanCloudInfo && isDarkMode && !(appId && appKey && server && !connected) ? 'rgba(255, 255, 255, 0.25)' : '',
+              color: !getLeanCloudInfo && isDarkMode && !(appId && appKey && server && !connected && !getLeanCloudInfo) ? 'rgba(255, 255, 255, 0.25)' : '',
               // eslint-disable-next-line max-len
-              background: !getLeanCloudInfo && isDarkMode && !(appId && appKey && server && !connected) ? '#4B4B50' : '',
-              border: isDarkMode ? !getLeanCloudInfo && !(appId && appKey && server && !connected)
+              background: !getLeanCloudInfo && isDarkMode && !(appId && appKey && server && !connected && !getLeanCloudInfo) ? '#4B4B50' : '',
+              // eslint-disable-next-line max-len
+              border: isDarkMode ? !getLeanCloudInfo && !(appId && appKey && server && !connected && !getLeanCloudInfo)
                 ? '1px solid rgba(255, 255, 255, 0)' : '' : '',
+              // eslint-disable-next-line max-len
+              pointerEvents: !(appId && appKey && server && !connected && !getLeanCloudInfo) ? 'none' : 'auto',
             }"
             @click="handleConnect"
-            :class="(appId && appKey && server && !connected) ? 'submit-hover' : ''"
+            :class="(appId && appKey && server&&!connected && !getLeanCloudInfo)?'submit-hover':''"
             class="submit"
           >
             {{ getLeanCloudInfo?$t('browsing.loading'):connected?'连接成功':$t('browsing.submit') }}

@@ -132,6 +132,7 @@ export default {
   },
   destroyed() {
     this.$bus.$off('show-lc-setup');
+    this.lcClient.close();
   },
   methods: {
     ...mapMutations({

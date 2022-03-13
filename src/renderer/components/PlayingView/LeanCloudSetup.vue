@@ -219,22 +219,42 @@ export default {
     handleConnect() {
       // eslint-disable-next-line @typescript-eslint/no-this-alias
       const that = this;
-      if (that.client === null) {
-        this.saveLCParam();
-        this.getLeanCloudInfo = true;
-        const realtime = new Realtime({
-          appId: this.appId,
-          appKey: this.appKey,
-          server: this.server,
-        });
-        realtime.createIMClient(this.userId).then((c) => {
-          that.client = c;
-          that.$emit('update:initClient', that.client);
-          // 获取对话
-          return c.getConversation(that.roomId);
-        }).then((conversation) => {
-          if (conversation) {
+      if (that.client !== null) {
+        that.client.close().catch(() => {});
+        that.client = null;
+      }
+      this.saveLCParam();
+      this.getLeanCloudInfo = true;
+      const realtime = new Realtime({
+        appId: this.appId,
+        appKey: this.appKey,
+        server: this.server,
+      });
+      realtime.createIMClient(this.userId).then((c) => {
+        that.client = c;
+        that.$emit('update:initClient', that.client);
+        // 获取对话
+        return c.getConversation(that.roomId);
+      }).then((conversation) => {
+        if (conversation) {
+          that.conversation = conversation;
+          that.connected = true;
+          that.$emit('update:initConnected', true);
+          this.saveRoomId();
+          that.getLeanCloudInfo = false;
+          that.$bus.$emit('lc-conversation', {
+            conversation: that.conversation,
+            userId: that.userId,
+          });
+        } else {
+          // 如果服务器端不存在这个 conversation
+          that.client.createConversation({
+            name: 'LeanCloud-Conversation',
+            // 创建暂态的聊天室（暂态聊天室支持无限人员聊天）
+            transient: true,
+          }).then((conversation) => {
             that.conversation = conversation;
+            that.roomId = that.conversation.id;
             that.connected = true;
             that.$emit('update:initConnected', true);
             this.saveRoomId();
@@ -243,32 +263,14 @@ export default {
               conversation: that.conversation,
               userId: that.userId,
             });
-          } else {
-            // 如果服务器端不存在这个 conversation
-            that.client.createConversation({
-              name: 'LeanCloud-Conversation',
-              // 创建暂态的聊天室（暂态聊天室支持无限人员聊天）
-              transient: true,
-            }).then((conversation) => {
-              that.conversation = conversation;
-              that.roomId = that.conversation.id;
-              that.connected = true;
-              that.$emit('update:initConnected', true);
-              this.saveRoomId();
-              that.getLeanCloudInfo = false;
-              that.$bus.$emit('lc-conversation', {
-                conversation: that.conversation,
-                userId: that.userId,
-              });
-            });
-          }
-        }).catch((e) => {
-          that.getFailed = true;
-          that.getLeanCloudInfo = false;
-          that.connected = false;
-          that.$emit('update:initConnected', false);
-        });
-      }
+          });
+        }
+      }).catch((e) => {
+        that.getFailed = true;
+        that.getLeanCloudInfo = false;
+        that.connected = false;
+        that.$emit('update:initConnected', false);
+      });
     },
   },
 };

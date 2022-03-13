@@ -412,6 +412,7 @@ export async function checkForUpdate(
     result.landingPage = data.landingPage;
     result.url = data.files[process.platform].url;
   }
+  result.isLastest = true;
   return result;
 }
 

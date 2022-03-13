@@ -3,6 +3,7 @@
     :class="['titlebar', { darwin: isDarwin }]"
     @mousemove.stop="handleMousemove"
     @dblclick="handleDbClick"
+    style="-webkit-app-region: drag"
   >
     <div
       v-if="!isDarwin"

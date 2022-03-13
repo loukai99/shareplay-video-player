@@ -1,10 +1,10 @@
 {
-  "name": "splayer",
-  "productName": "splayer",
-  "homepage": "https://splayer.org",
-  "version": "4.9.4",
+  "name": "shareplayer",
+  "productName": "SharePlayer",
+  "homepage": "https://github.com/loukai99/shareplay-video-player",
+  "version": "0.1.2",
   "author": "tomasen <tomasen@gmail.com>",
-  "description": "a media player",
+  "description": "a media player which can sync play videos",
   "license": "GPL-3.0-or-later",
   "main": "./dist/electron/main.js",
   "engines": {
